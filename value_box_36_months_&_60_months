@@ -1,0 +1,64 @@
+import plotly.graph_objects as go
+import plotly.express as px
+
+def create_value_box(value, color, caption, icon):
+    fig = go.Figure(go.Indicator(
+        mode="number+gauge",
+        value=value,
+        title={"text": caption},
+        domain={'row': 0, 'column': 0},
+        number={'prefix': "", 'suffix': "", 'valueformat': ".2f"},
+        gauge={'axis': {'range': [None, 100]},
+               'bar': {'color': color},
+               'steps': [{'range': [0, 100], 'color': color}]
+               },
+    ))
+    return fig
+
+
+# Define a function to create a value box
+def create_value_box(value, color, caption, icon):
+    fig = go.Figure()
+    fig.add_annotation(
+        text=str(value),
+        x=0.5,
+        y=0.5,
+        showarrow=False,
+        font=dict(size=40, color=color),
+    )
+    fig.update_layout(
+        annotations=[
+            dict(
+                text=caption,
+                showarrow=False,
+                x=0.5,
+                y=0.4,
+                font=dict(size=20, color='black'),
+            ),
+            dict(
+                text=icon,
+                showarrow=False,
+                x=0.5,
+                y=0.2,
+                font=dict(size=30, color='black'),
+            ),
+        ],
+        template="plotly_white",  # You can change the template as needed
+        width=250,
+        height=150,
+        margin=dict(l=20, r=20, t=20, b=20),
+    )
+    return fig
+
+# Create a value box
+value_box_36_months = create_value_box(
+    10.5, "blue", "36-Month Loan (Last Quarter Average Interest Rate)", "👍"
+)
+
+value_box_60_months = create_value_box(
+    12.0, "green", "60-Month Loan (Last Quarter Average Interest Rate)", "👍"
+)
+
+# Display the value boxes
+value_box_36_months.show()
+value_box_60_months.show()
