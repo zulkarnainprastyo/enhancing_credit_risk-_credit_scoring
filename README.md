@@ -67,3 +67,27 @@ Bagging with Base estimator as Random Forest       | 82.98
 Bagging with Base estimator as Logistic Regression | 81.93
 AdaBoost Classifier                                | 82.12
 MultilLayer Perceptron Classifier                  | 82.18
+
+## Framework of this project
+
+1. Introduction and Background
+    * Explain the background and goals of the project.
+
+2. Dataset Description
+    * Explain the dataset; describe the variables.
+
+3. Scorecards Development
+    * Describe each step of the workflow and its result.
+
+4. Implementation Plan
+    * Setting a cutoff.
+    * Create the credit process workflow.
+
+5. Conclusion and Recommendation
+    Make a summary of the following:
+    * The conclusions from the scorecards and analysis.
+    * Recommendations for the user.
+    * Recommendation for the next project.
+
+6. References
+    * Search references
