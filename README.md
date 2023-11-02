@@ -1,5 +1,21 @@
 # Credit Scoring Analytics for Lending Club Loan Data
 
+## Background
+
+The objective of LendingClub is to revolutionize the banking industry by connecting borrowers with investors. The platform offers a transparent overview of various investment opportunities that differ from the conventional choices provided by the banking industry. Borrowers are provided with unique means of financing their projects and businesses. Meanwhile, investors are given alternative investment options to explore.
+
+Lending Club, the largest peer-to-peer lending platform, was established in San Francisco, California in 2007. A year later, it registered its offerings with the Securities and Exchange Commission. Since then, it has been the recipient of many accolades and international recognition, such as the World Economic Forum 2012 Technology Pioneer Award, Forbes’s America’s 20 most promising companies in 2011 and 2012, and one of CNBC’s Disruptor 50 in 2013 and 2014.
+
+## Goals
+
+To create a financial diversification recommender that aims to maximize returns while minimizing the risk of investments.
+
+## Motivation for the Project:
+
+Lending Club periodically publishes both quarterly and annual data regarding the loans that it has facilitated. This data is comprised of vast databases that contain various parameters and past outcomes of both successful and unsuccessful loans. Despite the wealth of information present, these databases are so vast that it is impractical for any human investor to effectively utilize them.
+
+Despite the enormous amount of information available, it offers a prime opportunity to construct lucrative models utilizing data science techniques. Those invested in Lending Club are eager to discern which loans are most promising in terms of generating high returns. Through data science techniques, these models would essentially predict and determine which loans are worthy investments, considering the risk of default and potential interest returns. Establishing effective and precise models would enable investors to invest with greater assurance, thereby promoting greater participation in Lending Club.
+
 ## 1. Data Preprocessing
 - [data_preprocessing.py](./1.%20Data%20Preprocessing/data_preprocessing.py)
 - [data_cleaning.py](./1.%20Data%20Preprocessing/data_cleaning.py)
